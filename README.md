@@ -19,12 +19,12 @@ Follow Rahul, an international student navigating his first week of university t
 ## 🛠️ Project Setup
 
 ### Prerequisites
-- **Unity 2022.3 LTS** (or your installed version)
+- **Unity 6000.2.9f1 LTS**
 - **Git** with **Git LFS** installed
 
 ### First Time Setup
 
-1. **Install Git LFS** (if you haven't already):
+1. **Install Git LFS** (in cmd prompt):
    ```bash
    git lfs install
    ```
@@ -100,7 +100,7 @@ Or in GitHub Desktop: Click "Fetch origin" then "Pull origin"
 ### Asset Guidelines
 - **Export final files only** — avoid committing WIP or source files (.psd, .blend)
 - **Use lowercase with dashes** for filenames: `rahul-happy.png`, `backpack-grid.png`
-- **Keep files reasonable size** — compress PNGs, export FBX without embedded textures
+- **Keep file sizes smol** — compress PNGs, export FBX without embedded textures
 
 ---
 
@@ -118,4 +118,4 @@ Or in GitHub Desktop: Click "Fetch origin" then "Pull origin"
 
 ## 🤝 Questions?
 
-Reach out to Ojas if you hit any Git issues or aren't sure where something should go!
+Shoot me a ping on Discord if you hit any Git issues or aren't sure where something should go!
