@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9b067ff9b42f94fa03c6ea2bb4a312, type: 3}
+  m_Name: MainTimeDefinition
+  m_EditorClassIdentifier: Assembly-CSharp::DisOriented.Data.TimeDefinition
+  totalDays: 9
+  dayNames:
+  - Monday
+  - Tuesday
+  - Wednesday
+  - Thursday
+  - Friday
+  - Saturday
+  - Sunday
+  - Monday
+  - Tuesday
+  phases:
+  - phase: 0
+    displayName: Morning
+    colorHex: FFD54F
+    icon: {fileID: 0}
+  - phase: 1
+    displayName: Afternoon
+    colorHex: FF8A65
+    icon: {fileID: 0}
+  - phase: 2
+    displayName: Evening
+    colorHex: 7986CB
+    icon: {fileID: 0}
+  - phase: 3
+    displayName: Night
+    colorHex: 5C6BC0
+    icon: {fileID: 0}
