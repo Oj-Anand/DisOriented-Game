@@ -1,12 +1,18 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ACOsYrlZ)
 # Dis-Oriented
+
 
 An indie life sim game about the absurdity of being a young adult in the 2020s.
 
+
 Follow Rahul, an international student navigating his first week of university through hilarious minigames and meaningful choices.
+
 
 ---
 
+
 ## 🎮 Team
+
 
 | Name | Role |
 |------|------|
@@ -14,20 +20,26 @@ Follow Rahul, an international student navigating his first week of university t
 | Morgan | 2D Art, UI/UX |
 | Jaquie | 3D Modeling |
 
+
 ---
 
+
 ## 🛠️ Project Setup
+
 
 ### Prerequisites
 - **Unity 6000.2.9f1 LTS**
 - **Git** with **Git LFS** installed
 
+
 ### First Time Setup
+
 
 1. **Install Git LFS** (in cmd prompt):
    ```bash
    git lfs install
    ```
+
 
 2. **Clone the repository**:
    ```bash
@@ -35,14 +47,18 @@ Follow Rahul, an international student navigating his first week of university t
    ```
    Or use GitHub Desktop: File → Clone Repository
 
+
 3. **Open in Unity**:
    - Open Unity Hub
    - Click "Add" and select the cloned `DisOriented` folder
    - Open the project
 
+
 ---
 
+
 ## 📁 Folder Structure
+
 
 ```
 Assets/
@@ -68,7 +84,9 @@ Assets/
 └── ThirdParty/         # Asset Store packages
 ```
 
+
 ### Where to put your files
+
 
 | If you're adding... | Put it in... |
 |---------------------|--------------|
@@ -80,15 +98,19 @@ Assets/
 | Sound effects | `_Project/Audio/SFX/` |
 | Music tracks | `_Project/Audio/Music/` |
 
+
 ---
 
+
 ## 🔄 Git Workflow
+
 
 ### Before you start working
 ```bash
 git pull
 ```
 Or in GitHub Desktop: Click "Fetch origin" then "Pull origin"
+
 
 ### Adding your work
 1. Save your files in the correct folder
@@ -97,14 +119,18 @@ Or in GitHub Desktop: Click "Fetch origin" then "Pull origin"
 4. Click "Commit to main"
 5. Click "Push origin"
 
+
 ### Asset Guidelines
 - **Export final files only** — avoid committing WIP or source files (.psd, .blend)
 - **Use lowercase with dashes** for filenames: `rahul-happy.png`, `backpack-grid.png`
 - **Keep file sizes smol** — compress PNGs, export FBX without embedded textures
 
+
 ---
 
+
 ## 📅 Milestones
+
 
 | Milestone | Due Date | Focus |
 |-----------|----------|-------|
@@ -114,8 +140,11 @@ Or in GitHub Desktop: Click "Fetch origin" then "Pull origin"
 | M4 | Apr 16 | Polish + integration |
 | Final Demo | Apr 21 | Presentation ready |
 
+
 ---
 
+
 ## 🤝 Questions?
+
 
 Shoot me a ping on Discord if you hit any Git issues or aren't sure where something should go!
