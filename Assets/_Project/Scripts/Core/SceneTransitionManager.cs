@@ -22,6 +22,8 @@ namespace DisOriented.Core
 
         //========== PUBLIC ==============
         public bool IsTransitioning => _isTransitioning;
+        public string CurrentSceneName =>
+    UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 
         //#################################
         //          INITIALIZATION

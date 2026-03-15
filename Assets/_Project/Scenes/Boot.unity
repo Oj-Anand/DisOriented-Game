@@ -268,6 +268,8 @@ GameObject:
   - component: {fileID: 787010916}
   - component: {fileID: 787010917}
   - component: {fileID: 787010918}
+  - component: {fileID: 787010920}
+  - component: {fileID: 787010919}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -332,6 +334,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisOriented.Core.TimeManager
   timeDefinition: {fileID: 11400000, guid: 884293210c428b242ab8d2811bc03179, type: 2}
+--- !u!114 &787010919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787010914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea42e4d2cd5a9c24da10eaa903066d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisOriented.Core.SceneTransitionManager
+  fadeDuration: 0.4
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &787010920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787010914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb17d82c4d10cef4a8d71a02f2bf7a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisOriented.Core.GameStateManager
 --- !u!1 &935089720
 GameObject:
   m_ObjectHideFlags: 0

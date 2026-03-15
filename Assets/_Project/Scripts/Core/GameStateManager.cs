@@ -34,6 +34,48 @@ namespace DisOriented.Core
 
         ///<summary>Pre pause state used by resume method</summary>
         public GameState StateBeforePause => _stateBeforePause;
+        //################################
+        //         INITIALIZATION
+        //################################
+        protected override void OnInitialize()
+        {
+            _currentState = GameState.Boot;
+            BuildTransitionTable(); 
+        }
+
+        private void BuildTransitionTable()
+        {
+            _validTransitions = new HashSet<(GameState, GameState)>
+            {
+                //Boot flow
+                (GameState.Boot, GameState.MainMenu),
+
+                //Main menu flow
+                (GameState.MainMenu,  GameState.Room),
+
+                //Room -> Minigame
+                (GameState.Room, GameState.Minigame),
+
+                //Minigame -> Minigame results
+                (GameState.Minigame, GameState.MinigameResults),
+
+                //Room -> main menu
+                (GameState.Room, GameState.MainMenu),
+
+                //minigame -> main menu (save quit from pause)
+                (GameState.Minigame, GameState.MainMenu),
+
+                //Minigame results to room 
+                (GameState.Minigame, GameState.Room),
+
+                // Pause(can pause from Room or Minigame)
+                (GameState.Room,      GameState.Paused),
+                (GameState.Minigame,  GameState.Paused),
+                (GameState.Paused, GameState.Room),
+                (GameState.Paused, GameState.Minigame),
+                (GameState.Paused, GameState.MainMenu),
+            };
+        }
 
         //#################################
         //          PUBLIC API 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using DisOriented.Data; 
 namespace DisOriented.Core
 {
     ///<summary>
@@ -20,22 +20,37 @@ namespace DisOriented.Core
             //wait one frame to ensure all awakes fire 
             yield return null;
 
-            //Validate critical managers exist 
-            if(ResourceManager.Instance == null)
+            //Validate all required managers exist 
+            bool ok = true;
+            ok &= ValidateManager(ResourceManager.Instance, "ResourceManager");
+            ok &= ValidateManager(SaveManager.Instance, "SaveManager");
+            ok &= ValidateManager(TimeManager.Instance, "TimeManager");
+            ok &= ValidateManager(GameStateManager.Instance, "GameStateManager");
+            ok &= ValidateManager(SceneTransitionManager.Instance, "SceneTransitionManager");
+
+            if (!ok)
             {
-                Debug.LogError("[BootLoader] ResourceManager missing!");
+                Debug.LogError("[BOOT] Missing managers ! Cannot continue...");
                 yield break;
             }
-            if (SaveManager.Instance == null)
+
+            Debug.Log("[BOOT] All managers OK! Loading menu...");
+
+            //Transition to main menu 
+            GameStateManager.Instance.TransitionTo(GameState.MainMenu);
+            SceneTransitionManager.Instance.LoadScene(firstSceneToLoad);
+
+        }
+
+        private bool ValidateManager<T>(T instance, string name) where T : class
+        {
+            if (instance == null)
             {
-                Debug.LogError("[BootLoader] SaveManager missing!");
-                yield break;
+                Debug.LogError($"[BOOT] {name} is missing !");
+                return false; 
             }
 
-            Debug.Log("[BOOTLOADER] All critical manager initialized. Loading Menu");
-            SceneManager.LoadScene(firstSceneToLoad); 
-
-
+            return true; 
         }
 
     }

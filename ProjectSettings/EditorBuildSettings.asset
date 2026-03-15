@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Room.unity
     guid: 64df26c62bb84f0439b7c5f31a35c0cd
+  - enabled: 1
+    path: Assets/_Project/Scenes/MiniGames/Pacemog.unity
+    guid: 35552467345d29c44ba75c6dc94e5982
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 144760e119197514ea0f80b528f7bf12, type: 3}
   m_UseUCBPForAssetBundles: 0

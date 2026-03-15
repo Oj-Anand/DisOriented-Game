@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e169af9d033824198b85ff274b2b95, type: 3}
+  m_Name: PacemogConfig
+  m_EditorClassIdentifier: Assembly-CSharp::DisOriented.Minigames.Pacemog.RunnerConfig
+  lanes:
+  - xPosition: -3
+    isOncoming: 1
+    scoreMultiplier: 2
+    laneName: Oncoming Far
+  - xPosition: -1
+    isOncoming: 1
+    scoreMultiplier: 1.5
+    laneName: Oncoming Near
+  - xPosition: 1
+    isOncoming: 0
+    scoreMultiplier: 1
+    laneName: Same Near
+  - xPosition: 3
+    isOncoming: 0
+    scoreMultiplier: 1
+    laneName: Same Far
+  baseScrollSpeed: 5
+  oncomingSpeedMultiplier: 1.8
+  sameDirectionSpeedMultiplier: 0.6
+  runDurationSeconds: 60
+  laneSwitchDuration: 0.15
+  startingLaneIndex: 2
+  iceSlowMultiplier: 3
+  iceEffectDuration: 1.5
+  baseSpawnInterval: 1.2
+  minSpawnInterval: 0.4
+  coinSpawnChance: 0.25
+  iceSpawnChance: 0.15
+  maxSpeedMultiplier: 1.8
+  maxSpawnRateMultiplier: 0.4
+  pointsPerPedestrianPassed: 100
+  coinValue: 25
+  successMoodReward: 15
+  successSwagReward: 10
+  bonusMoodPerThousandPoints: 5
+  bonusSwagPerThousandPoints: 3
+  gameOverEnergyPenalty: -8
+  gameOverTummyPenalty: -5
+  pedestrianPoolSize: 20
+  icePoolSize: 10
+  coinPoolSize: 15
+  spawnY: 12
+  despawnY: -8
